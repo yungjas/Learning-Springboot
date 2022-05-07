@@ -27,6 +27,7 @@ public class StudentConfig {
                     24
             );
 
+            // save all students to students table
             repository.saveAll(
                     Arrays.asList(jasmine, alex)
             );
