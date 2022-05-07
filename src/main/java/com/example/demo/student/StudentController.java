@@ -13,7 +13,7 @@ public class StudentController {
 
     private final StudentService studentService;
 
-    @Autowired //auto inits StudentService for us, without this we need to init StudentService ourselves when we init the StudentController
+    @Autowired //auto inits StudentService for us, without this we need to init StudentService ourselves (this.studentService = new StudentService()) when we init the StudentController
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
